@@ -2,37 +2,168 @@
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+form {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  width: 300px;
+  margin: 0 auto;
+}
+
+form div {
+  margin-bottom: 10px;
+}
+
+table {
+  list-style: none;
+  padding: 0;
+  display: inline-block;
+}
+
+table tr {
+  border: 1px solid #ccc;
+  margin-bottom: 10px;
+  padding: 10px;
+}
+
+.table-div {
+  display: inline-flex;
+}
+
+.table-container {
+  width: 100%;
+  border-collapse: collapse;
+  text-align: center;
+}
+
+.table-container th, .table-container td {
+  border: 1px solid black;
+  padding: 8px;
+  text-align: center;
+}
+
+.table-container select {
+  width: 100%;
+  padding: 4px;
+}
+
+.table-container button {
+  padding: 4px 8px;
+}
+
+.description-cell {
+  width: 200px;
+  max-width: 200px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  height: auto;
+}
+
+.task-form {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.task-form table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 20px;
+}
+
+.task-form th, .task-form td {
+  padding: 8px;
+  text-align: left;
+}
+
+.task-form th {
+  width: 120px;
+}
+
+.task-form input[type="text"],
+.task-form textarea,
+.task-form select {
+  width: calc(100% - 16px);
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 14px;
+  box-sizing: border-box;
+}
+
+.task-form textarea {
+  height: 100px;
+}
+
+.task-form button {
+  padding: 10px 20px;
+  background-color: #007bff;
   color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
 }
 
-.App-link {
-  color: #61dafb;
+.task-form button:hover {
+  background-color: #0056b3;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.task-form button[type="submit"] {
+  width: 100%;
+}
+
+.task-form label {
+  font-weight: bold;
+}
+
+.error-popup-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.error-popup {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  max-width: 400px;
+  width: 100%;
+}
+
+.error-popup-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.close-btn {
+  background: none;
+  border: none;
+  font-size: 24px;
+  cursor: pointer;
+  color: #888;
+}
+
+.error-popup-content ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.error-popup-content ul li {
+  margin-bottom: 5px;
+  color: #ff6347;
 }
