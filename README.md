@@ -21,13 +21,13 @@ Follow these instructions to get a copy of the project up and running on your lo
 1. Clone the repository:
 
    ```bash
-   git clone https://github.com/your-username/react-task-management.git
+   git clone https://github.com/rorshaan/assestmentreact
    ```
 
 2. Navigate to the project directory:
 
    ```bash
-   cd react-task-management
+   cd assestmentreact
    ```
 
 3. Install dependencies:
